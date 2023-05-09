@@ -24,11 +24,7 @@ router.get(("/inicio-sesion"), isLoggedOut, (req, res, next) => {
 })
 
 router.post(("/inicio-sesion"), (req, res, next) => {
-
     const { username, planePasword } = req.body
-
-
-
     if (username === "" || planePasword === "") {
         res.render('auth/login', { errorMessage: 'Los campos son obligatorios' })
         return

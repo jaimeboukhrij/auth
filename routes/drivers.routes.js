@@ -19,7 +19,6 @@ router.post("/create", (req, res) => {
         .create({ name, date, team, img })
         .then(() => res.redirect("/drivers"))
         .catch(err => console.log(err))
-
 })
 
 router.get("/", (req, res) => {
