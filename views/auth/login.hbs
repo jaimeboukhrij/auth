@@ -1,0 +1,27 @@
+<div class="bg-singin"></div>
+
+<div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+</div>
+<form method="post" action="/inicio-sesion">
+    <div>
+        <h3>LogIn Here</h3>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Nickname" id="username" name="username">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password" name="planePasword">
+
+        {{#if errorMessage}}
+        <div id="error">{{errorMessage}}</div>
+        {{/if}}
+
+
+        <button>SingUp</button>
+
+</form>
+<a href="/registrarse">¿Aun no esta registrado? Hazlo aqui </a>
+</div>
+</div>
